@@ -8,21 +8,21 @@
 </head>
 <body>
   <div class="container">
-    <h1>🌏 投胎抽卡模擬器<br/><span class="subtitle">Reincarnation Gacha Simulator</span></h1>
+    <h1>🌏 投胎抽卡模擬器</h1>
+    <p class="subtitle">看看你下輩子出生在哪！</p>
     <div id="card" class="card hidden">
       <h2 id="country-name"></h2>
       <img id="flag" src="" alt="flag" class="flag"/>
-      <div id="map" class="map">🌍</div>
       <ul>
-        <li><b>HDI:</b> <span id="hdi"></span></li>
-        <li><b>Life Expectancy:</b> <span id="life"></span></li>
-        <li><b>Rarity:</b> <span id="rarity"></span></li>
+        <li><b>人類發展指數 (HDI)：</b> <span id="hdi"></span></li>
+        <li><b>平均壽命：</b> <span id="life"></span></li>
+        <li><b>人口機率：</b> <span id="rarity"></span></li>
       </ul>
     </div>
-    <button onclick="drawGacha()">🎰 抽卡 / Draw</button>
-    <p id="counter">抽卡次數 / Draws: 0</p>
+    <button onclick="drawGacha()">🎰 投胎！</button>
+    <p id="counter">已轉生次數：0</p>
     <div class="share">
-      <button onclick="shareResult()">🔗 分享結果 / Share</button>
+      <button onclick="shareResult()">🔗 分享結果</button>
     </div>
   </div>
   <script src="data.js"></script>
