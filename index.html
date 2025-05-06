@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>投胎抽卡模擬器 | Reincarnation Gacha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌏 投胎抽卡模擬器<br/><span class="subtitle">Reincarnation Gacha Simulator</span></h1>
+    <div id="card" class="card hidden">
+      <h2 id="country-name"></h2>
+      <img id="flag" src="" alt="flag" class="flag"/>
+      <div id="map" class="map">🌍</div>
+      <ul>
+        <li><b>HDI:</b> <span id="hdi"></span></li>
+        <li><b>Life Expectancy:</b> <span id="life"></span></li>
+        <li><b>Rarity:</b> <span id="rarity"></span></li>
+      </ul>
+    </div>
+    <button onclick="drawGacha()">🎰 抽卡 / Draw</button>
+    <p id="counter">抽卡次數 / Draws: 0</p>
+    <div class="share">
+      <button onclick="shareResult()">🔗 分享結果 / Share</button>
+    </div>
+  </div>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
